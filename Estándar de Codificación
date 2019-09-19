@@ -1,0 +1,53 @@
+Terminologías usadas 
+
+El término clase se usa inclusivamente para significar una clase "ordinaria", una clase de enumeración, una interfaz o un tipo de anotación ( @interface).
+El término miembro (de una clase) se usa inclusivamente para referirse a una clase, campo, método o constructor anidado ; es decir, todos los contenidos de nivel superior de una clase, excepto inicializadores y comentarios.
+El término comentario siempre se refiere a los comentarios de implementación. No utilizamos la frase "comentarios de documentación o comentarios de código", sino el término común "Javadoc".
+
+
+Standard de codificación
+
+Propósito	Forma de implementación en el código
+
+Nombre del Proyecto:	El nombre del proyecto debe de ser significativo al problema para el cual se esta escribiendo el código del proyecto
+
+Nombre de los archivos generados dentro del proyecto:	El nombre de los archivos generados dentro del proyecto debe de hacer al nombre de las clases(s) que contenga el mismo.
+Creación de capas	Se debe considerar la creación de capas para el código que controlen tareas en específico y que se puedan comunicar entre sí, por ejemplo, la capa lógica del programa donde se llevan acabo todas las tareas lógicas requeridas del mismo, también se pueden considerar capa de GUI y capa de Conexión a base de datos.
+
+Encabezado del archivo principal: 	El archivo que contenga la entrada main, debe llevar la siguiente información, en el formato lo más parecido al ejemplo que el entorno permita
+/******************************************************************/
+/* Asignación de programa:           Programa que lleva control de alumnos egresados */
+/* Nombre del desarrollador:        Salomon Maldonado Navarro                                */
+/* Fecha :                                           Fecha que se inició a escribir el proyecto   */
+/* Descripción:                        Breve explicación de las funcionalidades del proyecto         */
+/******************************************************************/
+
+Comentarios:	Los comentarios deben explicar tanto el propósito como el comportamiento del código.
+No se debe de comentar código que no ya no se utiliza, en ese caso mejor versionar y borrar el código.
+No hacer comentarios de código que se entiende de manera obia.
+
+Ejemplo de buen comentario
+// Esta excepción controla un error en caso de que la conexión con la base de datos no se pueda realizar
+/Ejemplo de mal comentario
+// El método Abrir conexión Nos sirve para abrir la conexión con la base de datos
+
+Sangría o Indentacion:	sangría cada nivel de llave del nivel anterior ejemplo:
+{
+ X=Y 
+}
+   {
+    Y=X
+   }
+Las llaves de apertura y cerrado deben de estar alineadas entre si la de arriba debe de coincidir con la de abajo
+
+No es obligatorio iniciar una llave al inicio del próximo reglón, en lenguajes como java la llave se puede poner inmediatamente después de la declaración de la firma de la función o de la condición pero en C# no es una obligación hacer esto
+
+Letra capital	Se usará letra capital para nombrar las clases
+
+Algunos lenguajes como C# manejan estilos donde la letra capital es obligatorio para definir algunos parámetros o funciones, esto se respeta si el lenguaje tiene su propio estilo.
+  
+Notación Camello	Se usará la notación camello para hacer mención nombre de métodos o funciones que se usen en todas las clases del proyecto
+
+Nombre de botones, cajas de texto etiquetas y otros herramientas de desarrollo del IDE	Todas los elementos que se usan para la interfaz de usuario que permiten interactuar con el mismo o mostrar información pedir información o hacer selección o manejo de la misma, deberán tener nombres significativos a la función que realizan, en notación Camello. Ejemplo JBUTTON1 = JbCancelar (botón que cancela una acción)
+Nombre de ventanas	El nombre de las ventanas debe de ser significativo a las tareas o requerimientos de la misma.
+
